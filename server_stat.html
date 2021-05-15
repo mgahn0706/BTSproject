@@ -5,6 +5,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	<script src="https://mcapi.us/scripts/minecraft.js"></script>
+	<script>
+		MinecraftAPI.getServerStatus('buildthesnu.kro.kr', {
+			port: 25565
+		}, function (err, status) {
+			if (err) {
+				document.querySelector('.server-online').innerHTML = '닫혀';
+			}
+		
+			// you can change these to your own message!
+			document.querySelector('.server-online').innerHTML = status.online ? '열려' : '닫혀';
+		});
+	</script>
 	<head>
 		<title>Build The SNU Project</title>
 		<meta charset="utf-8" />
@@ -23,7 +36,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li class="current">
+							<li>
 								<a href="#">Progress</a>
 								<ul>
 									<li><a href="map.html">Map</a></li>
@@ -32,7 +45,7 @@
 								</ul>
 									<li>
 										<a href="guide.html">Building Guide</a>
-							<li><a href="server_stat.html">Server Status</a></li>
+							<li class="current"><a href="server_stat.html">Server Status</a></li>
 
 					</nav>
 
@@ -47,12 +60,11 @@
 
 								<article>
 									<header>
-										<h2>MAP</h2>
-										<p>2020.05.10.</p>
-
-										<a href="#"><img src="images/snumap.png" alt="" width="600"></a>
+										<img src="https://mcapi.us/server/image?ip=buildthesnu.kro.kr">
+										<div class="server-status">
+											<h3>현재 서버가 <span class="server-online"></span>있습니다.</h3>
+										 </div>
 									</header>
-
 
 								</article>
 
