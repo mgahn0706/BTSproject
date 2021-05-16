@@ -5,6 +5,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	<script src="https://mcapi.us/scripts/minecraft.js"></script>
+	<script>
+		MinecraftAPI.getServerStatus('buildthesnu.kro.kr', {
+			port: 25565 // optional, only if you need a custom port
+		}, function (err, status) {
+			if (err) {
+				document.querySelector('.server-online').innerHTML = '닫혀';
+		}
+
+		// you can change these to your own message!
+		document.querySelector('.server-online').innerHTML = status.online ? '열려' : '닫혀';
+		});
+	</script>
 	<head>
 		<title>Build The SNU Project</title>
 		<meta charset="utf-8" />
@@ -31,9 +44,9 @@
 										<li><a href="photo.html">Photo</a></li>
 										<li><a href="todo.html">TO DO</a></li>
 									</ul>
-										<li>
-											<a href="guide.html">Building Guide</a>
-								<li><a href="no-sidebar.html">Contact</a></li>
+								</li>
+								<li><a href="guide.html">Building Guide</a></li>
+								<li><a href="server_stat.html">Server Status</a></li>
 
 						</nav>
 
@@ -82,17 +95,21 @@
 						<header class="major">
 							<h2>어떻게 참여할 수 있나요?</h2>
 							<p>How can I participate?</p>
+						<div class="inner">
+		<script src="https://mcapi.us/scripts/minecraft.js"></script>
 						</header>
+
+
 					</div>
 				</section>
-
+				
 			<!-- Posts -->
 				<section class="wrapper style1">
 					<div class="container">
 						<div class="row">
 							<section class="col-6 col-12-narrower">
 								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
+									<a class="image left"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="inner">
 										<h3>진행상황 확인하기</h3>
 										<p>먼저, 웹사이트에서 현재 진행 상황을 확인합니다. 만들고 싶은 건물이 이미 지어지고 있는지 확인합니다.</p>
@@ -101,9 +118,9 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
+									<a class="image left"><img src="images/pic02.jpg" alt=""></a>
 									<div class="inner">
-										<h3>서버 접속하기</h3>
+										<h3>서버 접속하기<span><a href="server_stat.html">(서버 상태 확인)</a></span></h3>
 										<p> buildthesnu.kro.kr으로 접속합니다. 버전은 1.16.5 이상입니다.</p>
 									</div>
 								</div>
@@ -112,7 +129,7 @@
 						<div class="row">
 							<section class="col-6 col-12-narrower">
 								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
+									<a class="image left"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="inner">
 										<h3>관리자에게 신고하기</h3>
 										<p>짓고 싶은 구역이 있다고 관리자에게 컨택합니다.</p>
@@ -121,7 +138,7 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
+									<a class="image left"><img src="images/pic04.jpg" alt="" /></a>
 									<div class="inner">
 										<h3>신나게 건축하기</h3>
 										<p>마음껏 건물을 짓습니다. scale은 1m당 2블럭입니다.</p>
