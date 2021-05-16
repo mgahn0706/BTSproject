@@ -1,0 +1,15 @@
+{
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2021-05-12 22:54:29 +0900"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2021-05-10 16:16:43 +0900"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}
