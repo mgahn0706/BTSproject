@@ -5,19 +5,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<script src="https://mcapi.us/scripts/minecraft.js"></script>
-	<script>
-		MinecraftAPI.getServerStatus('buildthesnu.kro.kr', {
-			port: 25565
-		}, function (err, status) {
-			if (err) {
-				document.querySelector('.server-online').innerHTML = '닫혀';
-			}
-
-			// you can change these to your own message!
-			document.querySelector('.server-online').innerHTML = status.online ? '열려' : '닫혀';
-		});
-	</script>
 	<head>
 		<title>Build The SNU Project</title>
 		<meta charset="utf-8" />
@@ -43,10 +30,10 @@
 									<li><a href="photo.html">Photo</a></li>
 									<li ><a href="todo.html">TO DO</a></li>
 								</ul>
-									<li>
+
 										<a href="guide.html">Building Guide</a>
-							<li class="current"><a href="server_stat.html">Server Status</a></li>
-							<li><a href="about.html">About Us</a></li>
+							<li><a href="server_stat.html">Server Status</a></li>
+							<li class="current"><li><a href="about.html">About Us</a></li>
 
 					</nav>
 
@@ -61,11 +48,39 @@
 
 								<article>
 									<header>
-										<img src="https://mcapi.us/server/image?ip=buildthesnu.kro.kr">
-										<div class="server-status">
-											<h3>현재 서버가 <span class="server-online"></span>있습니다.</h3>
-										 </div>
+										<h2>프로젝트 총괄</h2>
+
+										<h3>Force_Update</h3>
+
+
+										<h3>건축에 도움을 주신 분들</h3>
+										<ul>
+											<li>jinmoon02</li>
+											<li>301Engineer</li>
+											<li>Desu_wa</li>
+											<li>y_cotto_14</li>
+											<li>coolbox_</li>
+											<li>boxybody</li>
+											<li>ObiWanJason</li>
+											<li>pourdeline</li>
+											<li>Multi_Human</li>
+											<li>rlaxoghd</li>
+											<li>JJH_ECE</li>
+										</ul>
+
+										<h3>개발에 도움을 주신 분들</h3>
+										<ul>
+											<li>pillose</li>
+										</ul>
+
+										<h3>Build the SNU in Media</h3>
+										<ul>
+											<li>...</li>
+										</ul>
+
+
 									</header>
+
 
 								</article>
 
