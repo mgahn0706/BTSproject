@@ -37,6 +37,174 @@ ol, ul {
 	list-style: none;
 }
 
+#todoList{
+	border: black 1px solid;
+	border-radius: 3%;
+}
+
+div.areaList{
+	margin: 10px;
+}
+
+ul.areaList{
+	list-style: none;
+	margin: 20px;
+
+	padding: 0px;
+	max-width: 500px;
+}
+
+
+
+ul{
+	list-style: none;
+}
+#todo{
+	text-align: center;
+	font-size: 20px;
+	font-family: "나눔고딕 ExtraBold";
+	padding: 20px;
+
+}
+ul.areaList li{
+
+	display: inline-block;
+	border: 1px black dotted;
+	padding: 10px;
+	font-size: 20px;
+	font-family: '나눔고딕 ExtraBold';
+
+	border-radius: 10%;
+	color:black;
+	text-align: center;
+	margin:3px;
+	font-weight: bold;
+	width: 150px;
+	height: 100px;
+	cursor: pointer;
+	transition: all 0.3s;
+
+}
+
+.areaList span{
+	background-color: rgba(255,255,255,0.7);
+
+}
+
+.placeList li{
+	list-style-type: none;
+
+}
+
+
+
+.placeList ul{
+	position: absolute;
+}
+
+
+ul.areaList li.mainGate{
+
+	background-size: cover;
+	background-image: url("http://pds.joins.com/news/component/htmlphoto_mmdata/202101/27/23714614-36d1-4059-9692-b7bfd973d1a7.jpg")
+}
+ul.areaList li.gym{
+	background-size: cover;
+	background-image: url("https://storage.doopedia.co.kr/upload/_upload/comm/travelkorea/200610/27/400_1161877480751.jpg")
+}
+
+ul.areaList li.socialStudies{
+	background-size: cover;
+	background-image: url("https://cdn.magazine.kim/news/photo/202101/633_708_3431.png");
+}
+
+ul.areaList li.gwanJung{
+	background-size: cover;
+	background-image: url("https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/MA3ZDQMD2XA75LMS2OHAP32YWE.jpg");
+}
+
+ul.areaList li.naturalScience{
+	background-size: cover;
+	background-image: url("https://science.snu.ac.kr/webdata/site/kor/config/289z384z510z6cfz098zd47ze90zb67zb99zbe1z81.png");
+}
+ul.areaList li.dorm{
+	background-size: cover;
+	background-image: url("https://www.snu.ac.kr/webdata/uploads/kor/image/2020/01/campuslife-facilities-dorm-intro.jpg");
+}
+
+ul.areaList li.downEng{
+	background-size: cover;
+	background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxNzEyMTRfMjkz/MDAxNTEzMTgyMTYzNzUx.FxkzothQW0cpSKVlkhS8Sn_odn9GT-p_-ebEKj11ILQg.69pqt2OyzNUJScyJWurck5rh9jqBiT2HkwS5Fsxi_VMg.JPEG.wheelock/ORG_DSC09724.jpg?type=w800");
+}
+
+ul.areaList li.musicArt{
+	background-size: cover;
+	background-image: url("https://storage.doopedia.co.kr/upload/_upload/comm/travelkorea/200610/27/400_1161880831757.jpg");
+}
+
+ul.areaList li.business{
+	background-size: cover;
+	background-image: url("https://storage.doopedia.co.kr/upload/_upload/image4/1711/22/171122021651297/171122021651297_thumb_400.jpg");
+}
+
+ul.areaList li.humanEcology{
+	background-size: cover;
+	background-image: url("https://w.namu.la/s/54e44b75c167ed76b478cda7430bc5705e746222bb4b2cc4beee03d6f56904226a65cd41a828a2e64be4b611ae34f203a04185d6f16318479c676381cda58b7300bbb66c25f7a76b536a417526b5b16f61e66c15cbe7a6be50a23035b91cb5f7");
+}
+
+ul.areaList li.lawSchool{
+	background-size: cover;
+	background-image: url("https://mblogthumb-phinf.pstatic.net/20150602_288/sinbi939_1433234914506YRVYh_JPEG/IMG_20150531_183756.jpg?type=w2");
+}
+
+ul.areaList li.vet{
+	background-size: cover;
+	background-image: url("http://vet.snu.ac.kr/sites/vet.snu.ac.kr/files/KakaoTalk_20190424_155754331_0.jpg");
+}
+
+ul.areaList li.education{
+	background-size: cover;
+	background-image: url("https://w.namu.la/s/1ea2e9636f58b620948f016c5e9b31d6ecf7032402c8b7014f639317c0550f34155e3554a0f4432006b17394b0ec6f30a6c778a93e9f24dbda008f9f871ec9bb2dbb864b119ebb90bc74aeeb54f21741cf13111e9a26dd1f0068500bca058520");
+}
+
+ul.areaList li.agriculture{
+	background-size: cover;
+	background-image: url("https://w.namu.la/s/4e3cb10500816b723bb8c34a50c682ccc1350857367cdc7f2ea214bf18f095f644f73d5b23d637deb18af1e4db884da12d92f5ad163a45623cd6f47c088d3babbdefb6d148d6dbc5c744dc2247693c7dfb0ea129afee7388449508bd62807180");
+}
+
+ul.areaList li.medicine{
+	background-image: url("https://snupharm.snu.ac.kr/sites/snupharm.snu.ac.kr/files/board/ad_pds/noname01.png");
+	background-size: cover;
+}
+
+ul.areaList li.liberalArt{
+	background-size: cover;
+	background-image: url("https://mapio.net/images-p/42187803.jpg");
+}
+
+ul.areaList li.upEng{
+	background-image: url("https://ww.namu.la/s/1313e1e23b3b10e3fcefc1ffb09446a573fd9ff52ed0c85b25880815eccec1cfc2643f8255a700b0fb1ac028aa9e9c662f7a03ac6fd5d71d5d4931d87fa6d219e1a19320bb1e4c5f99c99d916bcd3ab6cc225d41b099944c8130efbcf5019aef");
+	background-size: cover;
+}
+
+ul.areaList li.nakSeong{
+	background-size: cover;
+	background-image: url("https://snu.or.kr/new/wp-content/uploads/2016/04/%EC%97%B0%EA%B5%AC%EA%B3%B5%EC%9B%90%EB%B3%B8%EA%B4%80%EC%82%AC%EC%A7%8401-370x190.jpg");
+}
+
+ul.areaList li.scienceLab{
+	background-image: url("https://storage.doopedia.co.kr/upload/_upload/comm/travelkorea/200610/27/400_1161930348570.jpg");
+	background-size: cover;
+}
+
+ul.areaList li:hover{
+	opacity: 70%;
+}
+
+
+
+
+
 blockquote, q {
 	quotes: none;
 }
@@ -129,7 +297,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table, blockquote {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
