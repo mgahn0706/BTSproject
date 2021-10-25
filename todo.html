@@ -37,6 +37,7 @@
 										<a href="guide.html">Building Guide</a>
 							<li><a href="server_stat.html">Server Status</a></li>
 							<li><a href="about.html">About Us</a></li>
+						</ul>
 
 					</nav>
 
@@ -412,52 +413,95 @@
 										</div>
 									</div>
 								</div>
+				</article>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	<script>
-		const showDetail = (areaName) => {
+			</div>
+		</div>
+	</section>
 
-			const lst = document.getElementById(`${areaName}`);
-			const wasVisible = lst.style.visibility;
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<section class="col-3 col-6-narrower col-12-mobilep">
+					<h3>Links</h3>
+					<ul class="links">
+						<li><a href="https://open.kakao.com/o/gz7Fkn7c">카카오톡 오픈채팅방</a></li>									<li><a href="https://github.com/mgahn0706/BTSproject/wiki/How-to-Download-the-Map">서울대 맵 파일 다운로드</a></li>
+						<details>
+							<summary>디스코드</summary>
+							<iframe src="https://discord.com/widget?id=844510544764731404&theme=dark"  allowtransparency="true" frameborder="1" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+							<p>connect를 눌러 서버에 참가</p>
+						</details>
 
-			document.getElementById('mainGate').style.visibility="hidden";
-			document.getElementById('gym').style.visibility="hidden";
-			document.getElementById('socialStudies').style.visibility="hidden";
-			document.getElementById('gwanJung').style.visibility="hidden";
-			document.getElementById('naturalScience').style.visibility="hidden";
-			document.getElementById('dorm').style.visibility="hidden";
-			document.getElementById('downEng').style.visibility="hidden";
-			document.getElementById('musicArt').style.visibility="hidden";
-			document.getElementById('business').style.visibility="hidden";
-			document.getElementById('humanEcology').style.visibility="hidden";
-			document.getElementById('lawSchool').style.visibility="hidden";
-			document.getElementById('vet').style.visibility="hidden";
-			document.getElementById('education').style.visibility="hidden";
-			document.getElementById('agriculture').style.visibility="hidden";
-			document.getElementById('medicine').style.visibility="hidden";
-			document.getElementById('liberalArt').style.visibility="hidden";
-			document.getElementById('upEng').style.visibility="hidden";
-			document.getElementById('nakSeong').style.visibility="hidden";
-			document.getElementById('scienceLab').style.visibility="hidden";
+					</ul>
+				</section>
 
 
+			</div>
+		</div>
+
+		<!-- Icons -->
+		<ul class="icons">
+			<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+		</ul>
+
+		<!-- Copyright -->
+		<div class="copyright">
+			<ul class="menu">
+				<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+	const showDetail = (areaName) => {
+
+		const lst = document.getElementById(`${areaName}`);
+		const wasVisible = lst.style.visibility;
+
+		document.getElementById('mainGate').style.visibility="hidden";
+		document.getElementById('gym').style.visibility="hidden";
+		document.getElementById('socialStudies').style.visibility="hidden";
+		document.getElementById('gwanJung').style.visibility="hidden";
+		document.getElementById('naturalScience').style.visibility="hidden";
+		document.getElementById('dorm').style.visibility="hidden";
+		document.getElementById('downEng').style.visibility="hidden";
+		document.getElementById('musicArt').style.visibility="hidden";
+		document.getElementById('business').style.visibility="hidden";
+		document.getElementById('humanEcology').style.visibility="hidden";
+		document.getElementById('lawSchool').style.visibility="hidden";
+		document.getElementById('vet').style.visibility="hidden";
+		document.getElementById('education').style.visibility="hidden";
+		document.getElementById('agriculture').style.visibility="hidden";
+		document.getElementById('medicine').style.visibility="hidden";
+		document.getElementById('liberalArt').style.visibility="hidden";
+		document.getElementById('upEng').style.visibility="hidden";
+		document.getElementById('nakSeong').style.visibility="hidden";
+		document.getElementById('scienceLab').style.visibility="hidden";
 
 
-			if(wasVisible==="visible"){
-				lst.style.visibility="hidden";
-			}
-			else{
-				lst.style.visibility = "visible";
-			}
 
+
+		if(wasVisible==="visible"){
+			lst.style.visibility="hidden";
 		}
-	</script>
+		else{
+			lst.style.visibility = "visible";
+		}
+
+	}
+</script>
 
 </body>
 </html>
